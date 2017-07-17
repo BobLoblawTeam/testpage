@@ -1,0 +1,37 @@
+import React, {Component} from 'react';
+
+class Header extends Component {
+    render() {
+        return (
+            <div className="App">
+                <header>
+                    <div className="headerTop">
+                        <div className="logo-container">
+                        <img src="./wayne_logo.png"/>
+                        <h1>Wayne Automotive</h1>
+                        </div>
+                        <div className="cta">
+                            <ul>
+                                <li>Sales: 222-222-2222</li>
+                                <li>Service: 222-222-2223</li>
+                                <li>Locations</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="navigation">
+                    <ul>
+                        <li>New Models</li>
+                        <li>Pre-Owned</li>
+                        <li>Specials</li>
+                        <li>Service and Parts</li>
+                        <li>Finance</li>
+                        <li>About Us</li>
+                    </ul>
+                    </div>
+                </header>
+            </div>
+        );
+    }
+}
+
+export default Header;
