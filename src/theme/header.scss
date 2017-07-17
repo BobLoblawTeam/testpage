@@ -1,0 +1,34 @@
+header {
+  .headerTop {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #333;
+    img {
+      padding: 0.5rem;
+      width: 120px;
+      height: 100px;
+    }
+    h1 {
+      color: #eee;
+    }
+    .cta {
+      margin-left: auto;
+      ul {
+        background-color: #333;
+        color: #ddd;
+      }
+    }
+  }
+  ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    background-color: #ddd;
+    margin-top: 0;
+    li {
+      display: inline-block;
+      list-style: none;
+      padding: 1rem 2rem 1rem 1rem;
+    }
+  }
+}
