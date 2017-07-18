@@ -3,12 +3,11 @@ import React, {Component} from 'react';
 class Header extends Component {
     render() {
         return (
-            <div className="App">
                 <header>
                     <div className="headerTop">
                         <div className="logo-container">
-                        <img src="./wayne_logo.png"/>
-                        <h1>Wayne Automotive</h1>
+                            <img src="./wayne_logo.png"/>
+                            <h1>WAYNE AUTOMOTIVE</h1>
                         </div>
                         <div className="cta">
                             <ul>
@@ -29,7 +28,6 @@ class Header extends Component {
                     </ul>
                     </div>
                 </header>
-            </div>
         );
     }
 }
