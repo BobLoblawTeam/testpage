@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import Collapsible from 'react-collapsible';
 import Header from './components/Header';
+import MainContent from './components/MainContent';
 
 class App extends Component {
     render() {
@@ -20,6 +21,7 @@ class App extends Component {
                         </ul>
                     </p>
                 </Collapsible>
+                <MainContent/>
             </div>
         );
     }
