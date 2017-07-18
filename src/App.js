@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import Collapsible from 'react-collapsible';
 import Header from './components/Header';
+import MainContent from './components/MainContent';
 import Hero from './components/Hero';
 import TabsModule from './components/Tabs';
 
@@ -27,7 +28,7 @@ class App extends Component {
                 <section className="paymentOptionsTabs">
                     <TabsModule/>
                 </section>
-
+                <MainContent/>
             </div>
         );
     }

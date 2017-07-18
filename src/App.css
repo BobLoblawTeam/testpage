@@ -40,6 +40,12 @@ header .navigation ul {
       header .headerTop .cta ul li {
         padding: 0 1.5rem; } }
 
+.mainContent h2 {
+  text-align: right; }
+
+.mainContent p {
+  text-align: right; }
+
 .App {
   text-align: center; }
 
