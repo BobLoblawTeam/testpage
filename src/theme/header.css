@@ -1,5 +1,4 @@
 header .headerTop {
-  font-family: Impact;
   display: flex;
   justify-content: flex-start;
   background-color: #333;
@@ -15,12 +14,14 @@ header .headerTop {
   header .headerTop .cta {
     flex: 1 1 100%; }
     header .headerTop .cta ul {
+      font-family: Impact;
       background-color: #333;
       color: #ddd; }
   header .headerTop ul {
     display: flex;
     list-style-type: none; }
     header .headerTop ul li {
+      font-family: Impact;
       list-style: none;
       padding: 0 1.5rem; }
 

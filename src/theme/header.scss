@@ -1,6 +1,5 @@
 header {
     .headerTop {
-        font-family: Impact;
         display: flex;
         justify-content: flex-start;
         background-color: #333;
@@ -19,6 +18,7 @@ header {
         .cta {
             flex: 1 1 100%;
             ul {
+                font-family: Impact;
                 background-color: #333;
                 color: #ddd;
             }
@@ -27,6 +27,7 @@ header {
             display: flex;
             list-style-type: none;
             li {
+                font-family: Impact;
                 list-style: none;
                 padding: 0 1.5rem;
             }
