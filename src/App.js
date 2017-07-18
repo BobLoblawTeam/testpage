@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 import './App.css';
 import Collapsible from 'react-collapsible';
 import Header from './components/Header';
+import MainContent from './components/MainContent';
+import Hero from './components/Hero';
+import TabsModule from './components/Tabs';
+
 
 class App extends Component {
     render() {
@@ -9,9 +13,10 @@ class App extends Component {
             <div className="App">
                 {/* Adding Header */}
                 <Header/>
-                <p className="App-intro">
-                    <img src="./batmobile-future-concept-6.jpg" className="hero" alt="hero"/>
-                </p>
+
+                {/* Adding Hero */}
+                <Hero />
+
                 <Collapsible trigger="Vehicle Specifications">
                     <p>
                         <ul>
@@ -20,6 +25,10 @@ class App extends Component {
                         </ul>
                     </p>
                 </Collapsible>
+                <section className="paymentOptionsTabs">
+                    <TabsModule/>
+                </section>
+                <MainContent/>
             </div>
         );
     }
