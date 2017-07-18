@@ -3,6 +3,7 @@ import './App.css';
 import Collapsible from 'react-collapsible';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import TabsModule from './components/Tabs';
 
 
 class App extends Component {
@@ -23,6 +24,10 @@ class App extends Component {
                         </ul>
                     </p>
                 </Collapsible>
+                <section className="paymentOptionsTabs">
+                    <TabsModule/>
+                </section>
+
             </div>
         );
     }
