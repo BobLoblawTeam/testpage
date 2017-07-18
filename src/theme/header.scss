@@ -1,11 +1,12 @@
 header {
     .headerTop {
+        font-family: Impact;
         display: flex;
         justify-content: flex-start;
         background-color: #333;
         flex-wrap: wrap;
         img {
-            padding: 0.5rem;
+            padding: 1rem;
             height: 100px;
         }
         h1 {
@@ -30,16 +31,27 @@ header {
                 padding: 0 1.5rem;
             }
         }
-
     }
     .navigation {
         ul {
+            font-family: Impact;
+            padding: 0;
             background-color: #ddd;
             margin-top: 0;
+            //flex-direction:row;
+            //justify-content: center;
+            //align-items: center;
             li {
+                font-size: 20px;
                 display: inline-block;
+                color: #333;
+                margin-left: auto;
                 list-style: none;
                 padding: 1rem 2rem 1rem 1rem;
+                &:hover {
+                    cursor: pointer;
+                    color: #c93934;
+                }
             }
         }
     }
