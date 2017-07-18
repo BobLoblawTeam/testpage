@@ -1,0 +1,51 @@
+.paymentOptionsTabs {
+    background: rgba(226, 226, 226, 0.3);
+    color: rgba(0, 0, 0, 0.6);
+    .tabs__labels {
+        display: flex;
+        list-style-type: none;
+        flex-wrap: wrap;
+        background: rgba(226, 226, 226, 0.3);
+        color: rgba(0, 0, 0, 0.6);
+        li {
+            flex: 1 1 20%;
+            a {
+                text-decoration: none;
+                padding: 0.5rem 5rem;
+                background: #bababa;
+                color: #000;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                margin: 0.5rem 0 0 0;
+                box-shadow: inset 0 -12px 6px -6px #8a8a8a;
+                &.active {
+                    background: #e2e2e2;
+                    color: rgba(0, 0, 0, 0.6);
+                    box-shadow: inset 0 16px 8px -8px #82C600;
+                }
+                &:not(.active) {
+                    border-right: 1px solid #8a8a8a;
+                }
+            }
+        }
+    }
+}
+
+dl {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+    dd, dt {
+        flex-basis: 50%;
+        margin: 1rem 0;
+    }
+    dd {
+        text-align: right;
+    }
+
+}

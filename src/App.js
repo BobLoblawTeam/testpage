@@ -4,6 +4,7 @@ import Collapsible from 'react-collapsible';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
 import Hero from './components/Hero';
+import TabsModule from './components/Tabs';
 
 
 class App extends Component {
@@ -24,6 +25,9 @@ class App extends Component {
                         </ul>
                     </p>
                 </Collapsible>
+                <section className="paymentOptionsTabs">
+                    <TabsModule/>
+                </section>
                 <MainContent/>
             </div>
         );
