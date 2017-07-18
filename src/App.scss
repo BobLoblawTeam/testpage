@@ -1,29 +1,41 @@
 @import 'theme/header.scss';
+@import 'theme/base.scss';
 @import 'theme/tabs.scss';
 @import 'theme/mainContent.scss';
 @import 'theme/footer.scss';
-@import 'theme/base.scss';
+
 .App {
-  text-align: center;
+    text-align: center;
+    width: 100%;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
 }
 
 .App-intro {
-  font-size: large;
+    font-size: large;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
