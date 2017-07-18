@@ -97,6 +97,15 @@ dl {
 .mainContent p {
   text-align: right; }
 
+footer {
+  background-color: #333;
+  height: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  footer h1 {
+    color: #eee; }
+
 .App {
   text-align: center; }
 

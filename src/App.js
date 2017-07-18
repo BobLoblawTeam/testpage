@@ -5,6 +5,7 @@ import Header from './components/Header';
 import MainContent from './components/MainContent';
 import Hero from './components/Hero';
 import TabsModule from './components/Tabs';
+import Footer from './components/Footer';
 
 
 class App extends Component {
@@ -29,6 +30,10 @@ class App extends Component {
                     <TabsModule/>
                 </section>
                 <MainContent/>
+
+                {/* Adding Footer */}
+                <Footer/>
+
             </div>
         );
     }
