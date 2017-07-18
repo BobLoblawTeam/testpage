@@ -2,7 +2,9 @@ import React, {Component} from 'react';
 import './App.css';
 import Collapsible from 'react-collapsible';
 import Header from './components/Header';
+import Hero from './components/Hero';
 import MainContent from './components/MainContent';
+
 
 class App extends Component {
     render() {
@@ -10,9 +12,10 @@ class App extends Component {
             <div className="App">
                 {/* Adding Header */}
                 <Header/>
-                <p className="App-intro">
-                    <img src="./batmobile-future-concept-6.jpg" className="hero" alt="hero"/>
-                </p>
+
+                {/* Adding Hero */}
+                <Hero />
+
                 <Collapsible trigger="Vehicle Specifications">
                     <p>
                         <ul>
