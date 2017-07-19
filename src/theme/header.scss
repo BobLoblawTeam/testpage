@@ -45,6 +45,9 @@ header {
         > span {
             font-family: Impact;
             padding: 1rem 5rem;
+            &.is-open {
+                color: #c93934;
+            }
         }
     }
     .navigation,
