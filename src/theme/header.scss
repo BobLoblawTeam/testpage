@@ -17,23 +17,38 @@ header {
         }
         .cta {
             flex: 1 1 100%;
+            background-color: #808080;
+            color: #ddd;
             ul {
                 font-family: Impact;
-                background-color: #333;
-                color: #ddd;
             }
         }
         ul {
             display: flex;
             list-style-type: none;
+            align-items: center;
+            justify-content: center;
             li {
                 font-family: Impact;
                 list-style: none;
-                padding: 0 1.5rem;
+                padding: 1rem 0.5rem;
+                &:not(:last-child) {
+                    border-right: 1px solid #ECE9E9;
+                }
+
             }
         }
     }
-    .navigation {
+    .Collapsible {
+        padding: 0.5rem;
+        cursor: pointer;
+        > span {
+            font-family: Impact;
+            padding: 1rem 5rem;
+        }
+    }
+    .navigation,
+    .Collapsible {
         ul {
             font-family: Impact;
             padding: 0;
@@ -41,11 +56,11 @@ header {
             margin: 0;
             li {
                 font-size: 20px;
-                display: inline-block;
+                display: block;
                 color: #333;
                 margin-left: auto;
                 list-style: none;
-                padding: 1rem 2rem 1rem 1rem;
+                padding: 0.5rem;
                 &:hover {
                     cursor: pointer;
                     color: #c93934;
@@ -53,19 +68,37 @@ header {
             }
         }
     }
+    .navigation {
+        display: none;
+    }
 }
 
 @media all and (min-width: 641px) {
     header {
         .headerTop {
             .cta {
-                flex: auto;
+                flex: 1 1 50%;
                 margin-left: auto;
+                background: inherit;
                 ul {
+                    padding-top: 1rem;
                     justify-content: flex-end;
                     li {
-                        padding: 0 1.5rem;
+                        padding: 0 0.5rem;
                     }
+
+                }
+            }
+        }
+        .Collapsible {
+            display: none;
+        }
+        .navigation {
+            display: block;
+            ul {
+                li {
+                    display: inline-block;
+                    padding: 1rem 2rem 1rem 1rem;
                 }
             }
         }

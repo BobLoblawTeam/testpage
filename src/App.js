@@ -17,15 +17,6 @@ class App extends Component {
 
                 {/* Adding Hero */}
                 <Hero />
-
-                <Collapsible trigger="Vehicle Specifications">
-                    <p>
-                        <ul>
-                            <li>Length: 396 in (33 feet) long</li>
-                            <li>Height: 59.05 in (1.5 m)</li>
-                        </ul>
-                    </p>
-                </Collapsible>
                 <section className="paymentOptionsTabs">
                     <TabsModule/>
                 </section>
