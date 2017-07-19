@@ -1,6 +1,9 @@
 .paymentOptionsTabs {
-    background: rgba(226, 226, 226, 0.3);
-    color: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    .tabs {
+        background: rgba(226, 226, 226, 0.3);
+        color: rgba(0, 0, 0, 0.6);
+    }
     .tabs__labels {
         display: flex;
         list-style-type: none;
@@ -33,9 +36,9 @@
             }
         }
     }
-    .tabs__content{
-        > div{
-            padding:0 2rem;
+    .tabs__content {
+        > div {
+            padding: 0 2rem;
         }
     }
 

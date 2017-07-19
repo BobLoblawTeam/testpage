@@ -1,8 +1,29 @@
 .mainContent {
-  h2 {
-    text-align: right;
-  }
-  p {
-    text-align: right;
-  }
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    .text {
+        padding: 1rem;
+        h2 {
+            margin: 0;
+            font-size: 2rem;
+        }
+    }
+    .media {
+        padding:1rem;
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+@media all and (min-width: 641px) {
+    .mainContent {
+        flex-direction: row;
+        .text,
+        .media {
+            flex: 1 1 46%;
+        }
+
+    }
 }

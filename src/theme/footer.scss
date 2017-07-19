@@ -1,10 +1,16 @@
 footer {
-  background-color: #333;
-  height: 18rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  h1 {
-    color: #eee;
-  }
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo-container {
+        padding: 0.5rem;
+        img {
+            height: 7rem;
+        }
+    }
+    h1 {
+        color: #eee;
+        margin: 0;
+    }
 }
