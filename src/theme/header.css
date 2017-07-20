@@ -7,45 +7,73 @@ header .headerTop {
     padding: 1rem;
     height: 100px; }
   header .headerTop h1 {
-    color: #eee; }
+    color: orangered; }
   header .headerTop .logo-container {
     display: flex;
     max-width: 20rem; }
   header .headerTop .cta {
-    flex: 1 1 100%; }
+    flex: 1 1 100%;
+    background-color: #808080;
+    color: #ddd; }
     header .headerTop .cta ul {
-      font-family: Impact;
-      background-color: #333;
-      color: #ddd; }
+      font-family: Impact; }
   header .headerTop ul {
     display: flex;
-    list-style-type: none; }
+    list-style-type: none;
+    align-items: center;
+    justify-content: center; }
     header .headerTop ul li {
       font-family: Impact;
       list-style: none;
-      padding: 0 1.5rem; }
+      padding: 1rem 0.5rem; }
+      header .headerTop ul li:not(:last-child) {
+        border-right: 1px solid #ECE9E9; }
 
-header .navigation ul {
+header .Collapsible {
+  padding: 0.5rem;
+  cursor: pointer; }
+  header .Collapsible > span {
+    font-family: Impact;
+    padding: 1rem 5rem; }
+    header .Collapsible > span.is-open {
+      color: #c93934; }
+
+header .navigation ul,
+header .Collapsible ul {
   font-family: Impact;
   padding: 0;
   background-color: #ddd;
   margin: 0; }
-  header .navigation ul li {
+  header .navigation ul li,
+  header .Collapsible ul li {
     font-size: 20px;
-    display: inline-block;
+    display: block;
     color: #333;
     margin-left: auto;
     list-style: none;
-    padding: 1rem 2rem 1rem 1rem; }
-    header .navigation ul li:hover {
+    padding: 0.5rem; }
+    header .navigation ul li:hover,
+    header .Collapsible ul li:hover {
       cursor: pointer;
       color: #c93934; }
 
+header .navigation {
+  display: none; }
+
 @media all and (min-width: 641px) {
   header .headerTop .cta {
-    flex: auto;
-    margin-left: auto; }
+    flex: 1 1 50%;
+    margin-left: auto;
+    background: inherit; }
     header .headerTop .cta ul {
+      padding-top: 1rem;
       justify-content: flex-end; }
       header .headerTop .cta ul li {
-        padding: 0 1.5rem; } }
+        padding: 0 0.5rem; }
+  header .Collapsible {
+    display: none; }
+  header .navigation {
+    display: block; }
+    header .navigation ul li {
+      display: inline-block;
+      padding: 1rem 2rem 1rem 1rem; } }

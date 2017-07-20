@@ -12,6 +12,7 @@
         color: rgba(0, 0, 0, 0.6);
         li {
             flex: 1 1 auto;
+            pointer-events: none;
             a {
                 text-decoration: none;
                 padding: 0.5rem;

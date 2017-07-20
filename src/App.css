@@ -7,52 +7,93 @@ header .headerTop {
     padding: 1rem;
     height: 100px; }
   header .headerTop h1 {
-    color: #eee; }
+    color: orangered; }
   header .headerTop .logo-container {
     display: flex;
     max-width: 20rem; }
   header .headerTop .cta {
-    flex: 1 1 100%; }
+    flex: 1 1 100%;
+    background-color: #808080;
+    color: #ddd; }
     header .headerTop .cta ul {
-      font-family: Impact;
-      background-color: #333;
-      color: #ddd; }
+      font-family: Impact; }
   header .headerTop ul {
     display: flex;
-    list-style-type: none; }
+    list-style-type: none;
+    align-items: center;
+    justify-content: center; }
     header .headerTop ul li {
       font-family: Impact;
       list-style: none;
-      padding: 0 1.5rem; }
+      padding: 1rem 0.5rem; }
+      header .headerTop ul li:not(:last-child) {
+        border-right: 1px solid #ECE9E9; }
 
-header .navigation ul {
+header .Collapsible {
+  padding: 0.5rem;
+  cursor: pointer; }
+  header .Collapsible > span {
+    font-family: Impact;
+    padding: 1rem 5rem; }
+    header .Collapsible > span.is-open {
+      color: #c93934; }
+
+header .navigation ul,
+header .Collapsible ul {
   font-family: Impact;
   padding: 0;
   background-color: #ddd;
   margin: 0; }
-  header .navigation ul li {
+  header .navigation ul li,
+  header .Collapsible ul li {
     font-size: 20px;
-    display: inline-block;
+    display: block;
     color: #333;
     margin-left: auto;
     list-style: none;
-    padding: 1rem 2rem 1rem 1rem; }
-    header .navigation ul li:hover {
+    padding: 0.5rem; }
+    header .navigation ul li:hover,
+    header .Collapsible ul li:hover {
       cursor: pointer;
       color: #c93934; }
 
+header .navigation {
+  display: none; }
+
 @media all and (min-width: 641px) {
   header .headerTop .cta {
-    flex: auto;
-    margin-left: auto; }
+    flex: 1 1 50%;
+    margin-left: auto;
+    background: inherit; }
     header .headerTop .cta ul {
+      padding-top: 1rem;
       justify-content: flex-end; }
       header .headerTop .cta ul li {
-        padding: 0 1.5rem; } }
+        padding: 0 0.5rem; }
+  header .Collapsible {
+    display: none; }
+  header .navigation {
+    display: block; }
+    header .navigation ul li {
+      display: inline-block;
+      padding: 1rem 2rem 1rem 1rem; } }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Impact; }
+
+p, ul {
+  font-family: Georgia; }
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
 
 .paymentOptionsTabs {
-  background: rgba(226, 226, 226, 0.3);
-  color: rgba(0, 0, 0, 0.6); }
+  padding: 1rem; }
+  .paymentOptionsTabs .tabs {
+    background: rgba(226, 226, 226, 0.3);
+    color: rgba(0, 0, 0, 0.6); }
   .paymentOptionsTabs .tabs__labels {
     display: flex;
     list-style-type: none;
@@ -60,7 +101,8 @@ header .navigation ul {
     background: rgba(226, 226, 226, 0.3);
     color: rgba(0, 0, 0, 0.6); }
     .paymentOptionsTabs .tabs__labels li {
-      flex: 1 1 auto; }
+      flex: 1 1 auto;
+      pointer-events: none; }
       .paymentOptionsTabs .tabs__labels li a {
         text-decoration: none;
         padding: 0.5rem;
@@ -86,8 +128,7 @@ header .navigation ul {
 dl {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0 2rem; }
+  flex-wrap: wrap; }
   dl dd, dl dt {
     flex-basis: 50%;
     margin: 1rem 0; }
@@ -96,26 +137,39 @@ dl {
   dl dt {
     text-align: left; }
 
-.mainContent h2 {
-  text-align: right; }
+.mainContent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; }
+  .mainContent .text {
+    padding: 1rem; }
+    .mainContent .text h2 {
+      margin: 0;
+      font-size: 2rem; }
+  .mainContent .media {
+    padding: 1rem; }
+    .mainContent .media img {
+      max-width: 100%; }
 
-.mainContent p {
-  text-align: right; }
+@media all and (min-width: 641px) {
+  .mainContent {
+    flex-direction: row; }
+    .mainContent .text,
+    .mainContent .media {
+      flex: 1 1 46%; } }
 
 footer {
   background-color: #333;
-  height: 18rem;
   display: flex;
   justify-content: center;
   align-items: center; }
+  footer .logo-container {
+    padding: 0.5rem; }
+    footer .logo-container img {
+      height: 7rem; }
   footer h1 {
-    color: #eee; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: Impact; }
-
-p, ul {
-  font-family: Georgia; }
+    color: #eee;
+    margin: 0; }
 
 .App {
   text-align: center;
