@@ -1,6 +1,8 @@
 .paymentOptionsTabs {
-  background: rgba(226, 226, 226, 0.3);
-  color: rgba(0, 0, 0, 0.6); }
+  padding: 1rem; }
+  .paymentOptionsTabs .tabs {
+    background: rgba(226, 226, 226, 0.3);
+    color: rgba(0, 0, 0, 0.6); }
   .paymentOptionsTabs .tabs__labels {
     display: flex;
     list-style-type: none;
@@ -8,7 +10,8 @@
     background: rgba(226, 226, 226, 0.3);
     color: rgba(0, 0, 0, 0.6); }
     .paymentOptionsTabs .tabs__labels li {
-      flex: 1 1 auto; }
+      flex: 1 1 auto;
+      pointer-events: none; }
       .paymentOptionsTabs .tabs__labels li a {
         text-decoration: none;
         padding: 0.5rem;
@@ -34,8 +37,7 @@
 dl {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0 2rem; }
+  flex-wrap: wrap; }
   dl dd, dl dt {
     flex-basis: 50%;
     margin: 1rem 0; }

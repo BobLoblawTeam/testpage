@@ -1,5 +1,20 @@
-.mainContent h2 {
-  text-align: right; }
+.mainContent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; }
+  .mainContent .text {
+    padding: 1rem; }
+    .mainContent .text h2 {
+      margin: 0;
+      font-size: 2rem; }
+  .mainContent .media {
+    padding: 1rem; }
+    .mainContent .media img {
+      max-width: 100%; }
 
-.mainContent p {
-  text-align: right; }
+@media all and (min-width: 641px) {
+  .mainContent {
+    flex-direction: row; }
+    .mainContent .text,
+    .mainContent .media {
+      flex: 1 1 46%; } }
